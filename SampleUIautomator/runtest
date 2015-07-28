@@ -1,0 +1,4 @@
+ant build
+adb push bin/SampleUIautomator.jar  /data/local/tmp
+adb shell uiautomator runtest SampleUIautomator.jar -c com.TestRun 
+#adb shell uiautomator runtest Ink-Fun-0025.jar  -c com.appurify.ink.test.TestRun -e debug true
